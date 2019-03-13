@@ -1,19 +1,13 @@
 package com.pattern.singleton.enums;
 
-public enum  EnumSingleton {
+public enum EnumSingleton {
     INSTANCE;
 
-    private Object data;
-
-    public Object getData() {
-        return data;
+    EnumSingleton(){
+        System.out.println("新建对象");
     }
 
-    public void setData(Object data) {
-        this.data = data;
-    }
-
-    public static EnumSingleton getInstance(){
+    public static EnumSingleton getInstance() {
         return INSTANCE;
     }
 }

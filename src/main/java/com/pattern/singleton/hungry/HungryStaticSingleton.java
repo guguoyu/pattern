@@ -2,15 +2,17 @@ package com.pattern.singleton.hungry;
 
 public class HungryStaticSingleton {
 
-    private static HungryStaticSingleton instance;
-
-    private HungryStaticSingleton(){}
-
-    static {
-        instance=new HungryStaticSingleton();
+    //私有化构造函数
+    private HungryStaticSingleton() {
     }
 
-    public HungryStaticSingleton getInstance(){
+    private static HungryStaticSingleton instance;
+
+    static {
+        instance = new HungryStaticSingleton();
+    }
+
+    public HungryStaticSingleton getInstance() {
         return instance;
     }
 }

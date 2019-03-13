@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ContainerSingleton {
-
+    //私有化构造函数
     private ContainerSingleton() {
 
     }
@@ -24,7 +24,6 @@ public class ContainerSingleton {
             }
             return ioc.get(className);
         }
-
 
     }
 }

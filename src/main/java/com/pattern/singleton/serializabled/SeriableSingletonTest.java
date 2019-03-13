@@ -8,12 +8,13 @@ public class SeriableSingletonTest {
         SeriableSingleton s1 = SeriableSingleton.getInstance();
 
         try {
+            //序列化
             FileOutputStream fos = new FileOutputStream("SeriableSingleton.obj");
-            ObjectOutputStream os = new ObjectOutputStream(fos);
-            os.writeObject(s1);
-            os.flush();
-            os.close();
-
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(s1);
+            oos.flush();
+            oos.close();
+            //反序列化
             FileInputStream fis = new FileInputStream("SeriableSingleton.obj");
             ObjectInputStream ois = new ObjectInputStream(fis);
             SeriableSingleton s2 = (SeriableSingleton) ois.readObject();

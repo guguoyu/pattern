@@ -1,7 +1,7 @@
 package com.pattern.singleton.lazy.doublecheck;
 
 public class LazyDoubleCheckSingleton {
-
+    //私有化构造函数
     private LazyDoubleCheckSingleton() {
 
     }
