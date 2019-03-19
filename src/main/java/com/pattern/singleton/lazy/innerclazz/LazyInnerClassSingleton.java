@@ -2,9 +2,7 @@ package com.pattern.singleton.lazy.innerclazz;
 
 public class LazyInnerClassSingleton {
     //私有化构造函数
-    private LazyInnerClassSingleton() {
-
-    }
+    private LazyInnerClassSingleton() { }
 
     //保证这个方法不会被重写，重载
     public static final LazyInnerClassSingleton getInstance() {

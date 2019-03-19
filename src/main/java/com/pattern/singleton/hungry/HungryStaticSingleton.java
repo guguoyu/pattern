@@ -3,8 +3,7 @@ package com.pattern.singleton.hungry;
 public class HungryStaticSingleton {
 
     //私有化构造函数
-    private HungryStaticSingleton() {
-    }
+    private HungryStaticSingleton() { }
 
     private static HungryStaticSingleton instance;
 

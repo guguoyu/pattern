@@ -2,8 +2,8 @@ package com.pattern.singleton.enums;
 
 public enum EnumSingleton {
     INSTANCE;
-
-    EnumSingleton(){
+    //私有化构造函数
+    private EnumSingleton(){
         System.out.println("新建对象");
     }
 
