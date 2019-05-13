@@ -1,4 +1,4 @@
-package com.pattern.decorate;
+package com.pattern.decorate.v1;
 
 public class BatterCakeWithEggAndSausage extends BatterCakeWithEgg {
     @Override
@@ -12,3 +12,4 @@ public class BatterCakeWithEggAndSausage extends BatterCakeWithEgg {
         return super.getPrice()+2;
     }
 }
+

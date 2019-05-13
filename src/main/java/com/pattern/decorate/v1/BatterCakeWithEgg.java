@@ -1,4 +1,4 @@
-package com.pattern.decorate;
+package com.pattern.decorate.v1;
 
 public class BatterCakeWithEgg extends BatterCake {
     @Override
